@@ -1,28 +1,69 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
 
-# Precompiled Headers
-*.gch
-*.pch
+# Ignore project files in the root
+/*.sln
+/*.xcodeproj
+/*/*.sln
+/*/*.xcodeproj
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Ignore local user Visual Studio files in any folder
+*.suo
+*.opensdf
+*.sdf
 
-# Fortran module files
-*.mod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+# Standard binary files
 *.lib
-
-# Executables
+*.idb
+*.a
+*.dll
 *.exe
-*.out
-*.app
+*.png
+*.bz2
+*.psd
+*.gif
+*.zip
+*.tga
+*.dylib
+*.gz
+*.so
+*.jar
+*.mp4
+*.pak
+*.bmp
+*.obj
+**/*.framework/**
+
+# Engine binaries
+/Engine/Binaries/**
+!/Engine/Binaries/DotNET
+/Engine/Binaries/DotNET/**
+!/Engine/Binaries/DotNET/GitDependencies.*
+
+# Engine extras
+/Engine/Extras/*/**
+!/Engine/Extras/Maya_AnimationRiggingTools/**
+/Engine/Extras/Maya_AnimationRiggingTools/**/*.pdf
+/Engine/Extras/Maya_AnimationRiggingTools/**/*.pyd
+/Engine/Extras/Maya_AnimationRiggingTools/MayaTools/General/ART/**
+/Engine/Extras/Maya_AnimationRiggingTools/MayaTools/General/Icons/**
+!/Engine/Extras/VisualStudioSnippets/**
+
+# Engine ThirdParty Libraries
+/Engine/Source/ThirdParty/ICU/icu4c-53_1/source/data/**
+/Engine/Source/ThirdParty/ICU/icu4c-53_1/source/test/**
+
+# Always exclude content folders
+#**/Content/**
+
+# Derived data cache is never checked in
+/*/DerivedDataCache/**
+
+# Engine intermediates
+/*/Intermediate/**
+/*/Plugins/**/Intermediate/**
+
+# NOTE: For now, we'll commit executable binaries too (game DLLs)
+#/*/Binaries/**
+#/*/Plugins/**/Binaries/**
+
+# Ignore any saved local files
+/*/Saved/**
