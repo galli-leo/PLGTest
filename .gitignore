@@ -16,7 +16,7 @@
 *.a
 *.dll
 *.exe
-*.png
+
 *.bz2
 *.psd
 *.gif
