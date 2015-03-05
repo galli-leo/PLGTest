@@ -67,7 +67,3 @@
 
 # Ignore any saved local files
 /*/Saved/**
-
-**/Binaries/**
-
-**/*.app/**
